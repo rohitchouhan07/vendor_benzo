@@ -90,6 +90,9 @@ PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
     org.cyanogenmod.hardware.xml
 
+# T-Mobile theme engine
+include vendor/cm/config/themes_common.mk
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/eos/overlay/common
 
 # Inherit common product build prop overrides
