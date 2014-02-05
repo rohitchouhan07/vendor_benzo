@@ -16,7 +16,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     ro.build.selinux=1 \
     ro.delta.version=VERSION
-  
+
+# Thank you, please drive thru!
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
