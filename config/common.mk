@@ -91,7 +91,7 @@ PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware.xml
 
 # T-Mobile theme engine
-include vendor/cm/config/themes_common.mk
+include vendor/eos/config/themes_common.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/eos/overlay/common
 
