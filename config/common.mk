@@ -54,6 +54,11 @@ PRODUCT_PACKAGES += \
     DSPManager \
     Launcher3
 
+# Extra tools
+PRODUCT_PACKAGES += \
+    zip \
+    unrar
+
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox \
