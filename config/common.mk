@@ -74,6 +74,11 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 
+# Screen recorder package and lib
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=0
 
