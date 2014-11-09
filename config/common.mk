@@ -70,8 +70,8 @@ PRODUCT_PACKAGES += \
 
 # Terminal Emulator
 PRODUCT_COPY_FILES += \
-    vendor/eos/proprietary/Term.apk:system/app/Term.apk \
-    vendor/eos/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+    vendor/eos/proprietary/Term.apk:system/app/Term/Term.apk \
+    vendor/eos/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/app/Term/lib/arm/libjackpal-androidterm4.so
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/eos/overlay/common
 
