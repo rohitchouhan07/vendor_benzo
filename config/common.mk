@@ -62,7 +62,10 @@ PRODUCT_PACKAGES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    CMFileManager
+    CMFileManager \
+    Apollo \
+    libcyanogen-dsp \
+    DSPManager
 
 # Busybox
 PRODUCT_PACKAGES += \
