@@ -14,7 +14,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
-    ro.build.selinux=1 \
+    ro.build.selinux=1
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
@@ -24,7 +24,9 @@ endif
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
-    vendor/eos/prebuilt/common/bin/50-eos.sh:system/addon.d/50-eos.sh
+    vendor/eos/prebuilt/common/bin/50-eos.sh:system/addon.d/50-eos.sh \
+    vendor/eos/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/eos/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
 endif
 
 # init.d support
