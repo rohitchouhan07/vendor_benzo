@@ -46,25 +46,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-# Required packages
-PRODUCT_PACKAGES += \
-    Development \
-    LatinIME
-
-# Stock AOSP packages
-PRODUCT_PACKAGES += \
-    audio_effects.conf \
-    Basic \
-    libscreenrecorder \
-    SoundRecorder \
-    VoiceDialer \
-    CellBroadcastReceiver
-
 # Extra packages
 PRODUCT_PACKAGES += \
     CMFileManager \
     Apollo \
     libcyanogen-dsp \
+    audio_effects.conf \
     DSPManager
 
 # Busybox
