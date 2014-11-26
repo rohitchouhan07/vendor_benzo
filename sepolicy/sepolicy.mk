@@ -19,6 +19,7 @@ BOARD_SEPOLICY_UNION += \
     installd.te \
     netd.te \
     property.te \
+    recovery.te \
     shell.te \
     su.te \
     sysinit.te \
