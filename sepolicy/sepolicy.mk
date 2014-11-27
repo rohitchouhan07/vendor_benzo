@@ -16,6 +16,7 @@ BOARD_SEPOLICY_UNION += \
     auditd.te \
     adbd.te \
     healthd.te \
+    hostapd.te \
     installd.te \
     netd.te \
     property.te \
