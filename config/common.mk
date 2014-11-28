@@ -63,10 +63,32 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Busybox \
 
+# Koush's Superuser
+SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
+
+# These packages are excluded from user builds
+ifneq ($(TARGET_BUILD_VARIANT),user)
+
+PRODUCT_PACKAGES += \
+    procmem \
+    procrank \
+    Superuser \
+    su
+
 # Terminal Emulator
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES +=  \
     vendor/eos/proprietary/Term.apk:system/app/Term/Term.apk \
     vendor/eos/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/app/Term/lib/arm/libjackpal-androidterm4.so
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=1
+else
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=0
+
+endif
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/eos/overlay/common
 
