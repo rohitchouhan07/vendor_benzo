@@ -77,7 +77,7 @@ PRODUCT_PACKAGES += \
     su
 
 # Terminal Emulator
-PRODUCT_COPY_FILES +=  \
+PRODUCT_COPY_FILES += \
     vendor/eos/proprietary/Term.apk:system/app/Term/Term.apk \
     vendor/eos/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/app/Term/lib/arm/libjackpal-androidterm4.so
 
