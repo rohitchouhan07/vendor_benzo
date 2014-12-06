@@ -76,6 +76,11 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 
+# CM Hardware Abstraction Framework
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
+
 # Terminal Emulator
 PRODUCT_COPY_FILES += \
     vendor/eos/proprietary/Term.apk:system/app/Term/Term.apk \
