@@ -52,7 +52,8 @@ PRODUCT_PACKAGES += \
     Apollo \
     libcyanogen-dsp \
     DSPManager \
-    Launcher3
+    Launcher3 \
+    CustomWallpapers
 
 # Extra tools
 PRODUCT_PACKAGES += \
