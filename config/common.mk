@@ -48,12 +48,11 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
+    AudioFX \
     CMFileManager \
-    Apollo \
-    libcyanogen-dsp \
-    DSPManager \
-    Launcher3 \
-    CustomWallpapers
+    CustomWallpapers \
+    Eleven \
+    Launcher3
 
 # Extra tools
 PRODUCT_PACKAGES += \
