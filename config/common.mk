@@ -29,8 +29,8 @@ endif
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
     vendor/eos/prebuilt/common/bin/50-eos.sh:system/addon.d/50-eos.sh \
-    vendor/eos/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/eos/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
+    vendor/eos/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/eos/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
 endif
 
 # init.d support
