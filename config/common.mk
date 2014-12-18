@@ -56,7 +56,8 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     CustomWallpapers \
     Eleven \
-    Launcher3
+    Launcher3 \
+    LockClock
 
 # Extra tools
 PRODUCT_PACKAGES += \
