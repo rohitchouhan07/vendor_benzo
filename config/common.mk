@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
     CustomWallpapers \
     Eleven \
     Launcher3 \
-    LockClock
+    LockClock \
+    OTACenter
 
 # Extra tools
 PRODUCT_PACKAGES += \
