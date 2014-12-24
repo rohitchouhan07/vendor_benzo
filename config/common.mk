@@ -53,17 +53,11 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     AudioFX \
-    CMFileManager \
     CustomWallpapers \
     Eleven \
     Launcher3 \
     LockClock \
     OTACenter
-
-# Extra tools
-PRODUCT_PACKAGES += \
-    zip \
-    unrar
 
 # Busybox
 PRODUCT_PACKAGES += \
