@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
 
 # Busybox
 PRODUCT_PACKAGES += \
-    Busybox \
+    Busybox
 
 # Koush's Superuser
 SUPERUSER_EMBEDDED := true
