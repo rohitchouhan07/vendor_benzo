@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
     su
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=1
+    persist.sys.root_access=0
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
