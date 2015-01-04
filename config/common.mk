@@ -71,7 +71,6 @@ SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 PRODUCT_PACKAGES += \
     procmem \
     procrank \
-    Superuser \
     su
 
 PRODUCT_PROPERTY_OVERRIDES += \
