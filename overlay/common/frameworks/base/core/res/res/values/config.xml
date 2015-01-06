@@ -18,6 +18,7 @@
         <item>airplane</item>
         <item>bugreport</item>
         <item>users</item>
+        <item>screenrecord</item>
     </string-array>
 
      <!-- Disable stock OTA components if installed -->
