@@ -64,7 +64,7 @@ PRODUCT_PACKAGES += \
 
 # Busybox
 PRODUCT_PACKAGES += \
-    Busybox \
+    Busybox
 
 # Koush's Superuser
 SUPERUSER_EMBEDDED := true
@@ -73,11 +73,15 @@ SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 PRODUCT_PACKAGES += \
     procmem \
     procrank \
-    Superuser \
     su
 
+# Screen recorder package and lib
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
+
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=1
+    persist.sys.root_access=0
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \

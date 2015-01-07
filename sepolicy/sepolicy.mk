@@ -16,13 +16,16 @@ BOARD_SEPOLICY_UNION += \
     auditd.te \
     adbd.te \
     healthd.te \
+    hostapd.te \
     installd.te \
     netd.te \
     property.te \
+    recovery.te \
     shell.te \
     su.te \
     sysinit.te \
     system.te \
+    system_app.te \
     ueventd.te \
     vold.te \
     mac_permissions.xml
