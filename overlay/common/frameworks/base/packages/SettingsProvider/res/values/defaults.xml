@@ -25,4 +25,10 @@
 
     <!-- Enable notification counters in statusbar -->
     <integer name="def_notif_count">1</integer>
+
+    <!-- Circle -->
+    <integer name="def_battery_style">2</integer>
+
+    <!-- Right QS pulldown -->
+    <integer name="def_qs_quick_pulldown">1</integer>
 </resources>
