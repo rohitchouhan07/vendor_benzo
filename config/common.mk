@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CustomWallpapers \
+    Development \
     Eleven \
     Launcher3 \
     LockClock \
