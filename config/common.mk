@@ -67,7 +67,8 @@ PRODUCT_PACKAGES += \
     Eleven \
     Launcher3 \
     LockClock \
-    OTACenter 
+    OTACenter \
+    Profiles
 
 # Busybox
 PRODUCT_PACKAGES += \
