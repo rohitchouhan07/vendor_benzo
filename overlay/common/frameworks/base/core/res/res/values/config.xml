@@ -36,4 +36,10 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
     </string-array>
 
+    <!-- Defines external services to be started by the SystemServer at boot. The service itself
+         should publish as a binder services in its onStart -->
+    <string-array name="config_externalCMServices">
+        <item>org.cyanogenmod.platform.internal.CMStatusBarManagerService</item>
+    </string-array>
+
 </resources>
