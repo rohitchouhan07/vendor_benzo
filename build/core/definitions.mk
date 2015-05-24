@@ -1,4 +1,4 @@
-#
+# 
 # CM-specific macros
 #
 define uniq
