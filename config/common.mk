@@ -32,6 +32,13 @@ PRODUCT_COPY_FILES += \
     vendor/eos/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
 endif
 
+# Viper4Android
+PRODUCT_COPY_FILES += \
+    vendor/benzo/prebuilt/common/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh \
+    vendor/benzo/prebuilt/common/priv-app/ViPER4Android_FX_A4.x/ViPER4Android_FX_A4.x.apk:system/priv-app/ViPER4Android_FX_A4/ViPER4Android_FX_A4.x.apk \
+    vendor/benzo/prebuilt/common/priv-app/ViPER4Android_FX_A4.x/lib/arm/libV4AJniUtils.so:system/priv-app/ViPER4Android_FX_A4/lib/arm/libV4AJniUtils.so \
+    vendor/benzo/prebuilt/common/etc/v4a.zip:system/addon.d/v4a.zip
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/eos/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
