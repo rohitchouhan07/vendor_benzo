@@ -32,6 +32,11 @@ PRODUCT_COPY_FILES += \
     vendor/eos/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
 endif
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+   vendor/benzo/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+   vendor/benzo/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # Viper4Android
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh \
