@@ -29,6 +29,11 @@ PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/benzo/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
 
+# Density Backup
+PRODUCT_COPY_FILES += \
+    vendor/benzo/prebuilt/common/addon.d/95-backup.sh:system/addon.d/95-backup.sh \
+    vendor/benzo/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+
 # SuperSU
 PRODUCT_COPY_FILES += \
    vendor/benzo/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
