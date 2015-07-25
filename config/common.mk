@@ -66,6 +66,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/app/BenzoBlock/BenzoBlock.apk:system/app/BenzoBlock/BenzoBlock.apk
 
+# LMT (PIE)
+PRODUCT_COPY_FILES += \
+    vendor/benzo/prebuilt/common/priv-app/LMT/LMT.apk:system/priv-app/LMT/LMT.apk \
+    vendor/benzo/prebuilt/common/priv-app/LMT/lib/arm/libTouchServiceNative.so:system/priv-app/LMT/lib/arm/libTouchServiceNative.so
+
 # Add few DRM libs
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
