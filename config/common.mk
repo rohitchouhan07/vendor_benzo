@@ -20,6 +20,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=0 \
     persist.debug.wfd.enable=1 \
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.allow.mock.location=0 \
+    ro.debuggable=1 \
+    persist.service.adb.enable=1
+
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
@@ -94,9 +101,10 @@ PRODUCT_PACKAGES += \
     BenzoOTA \
     CMFileManager \
     Development \
-    SlimLauncher \
     LockClock \
-    Profiles
+    OmniSwitch \
+    Profiles \
+    SlimLauncher
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
