@@ -4,7 +4,7 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/eos/sepolicy
+    vendor/benzo/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file.te \

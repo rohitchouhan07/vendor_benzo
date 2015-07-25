@@ -1,4 +1,4 @@
-# Euphoria-OS Extras
+# Benzo Extras
 
 # Koush's Superuser
 import /init.superuser.rc
@@ -14,6 +14,7 @@ on boot
     chown system system /sys/block/mmcblk0/queue/scheduler
     chmod 0664 /sys/block/mmcblk0/queue/scheduler
     restorecon /sys/block/mmcblk0/queue/scheduler
+    setenforce 0
 
 # adb over network
 on property:service.adb.tcp.port=5555

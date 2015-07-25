@@ -14,23 +14,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
-    ro.build.selinux=1 
+    ro.build.selinux=0 \
+    persist.debug.wfd.enable=1 \
 
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
-ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
-endif
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
 # Backup Tool
-ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
-    vendor/eos/prebuilt/common/bin/50-eos.sh:system/addon.d/50-eos.sh \
-    vendor/eos/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/eos/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
-endif
+    vendor/benzo/prebuilt/common/bin/50-benzo.sh:system/addon.d/50-benzo.sh \
+    vendor/benzo/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/benzo/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
 
 # SuperSU
 PRODUCT_COPY_FILES += \
@@ -46,20 +43,20 @@ PRODUCT_COPY_FILES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/eos/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/eos/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/benzo/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/benzo/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/eos/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/benzo/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # init file
 PRODUCT_COPY_FILES += \
-    vendor/eos/prebuilt/common/etc/init.eos.rc:root/init.eos.rc
+    vendor/benzo/prebuilt/common/etc/init.benzo.rc:root/init.benzo.rc
 
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/eos/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/benzo/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -67,19 +64,17 @@ PRODUCT_COPY_FILES += \
 
 # Add few DRM libs
 PRODUCT_COPY_FILES += \
-    vendor/eos/prebuilt/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    vendor/eos/prebuilt/common/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
-    vendor/eos/prebuilt/common/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+    vendor/benzo/prebuilt/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/benzo/prebuilt/common/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+    vendor/benzo/prebuilt/common/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    AudioFX \
-    CustomWallpapers \
+    BenzoOTA \
+    CMFileManager \
     Development \
-    Eleven \
-    Launcher3 \
+    SlimLauncher \
     LockClock \
-    OTACenter \
     Profiles
 
 # CM Platform Library
@@ -103,7 +98,7 @@ PRODUCT_PACKAGES += \
     libscreenrecorder
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=0
+    persist.sys.root_access=1
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -125,9 +120,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.build.version.plat.sdk=$(CM_PLATFORM_SDK_VERSION)
 
 # T-Mobile theme engine
-include vendor/eos/config/themes_common.mk
+include vendor/benzo/config/themes_common.mk
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/eos/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay/common
 
 # Inherit common product build prop overrides
--include vendor/eos/config/common_versions.mk
+-include vendor/benzo/config/common_versions.mk

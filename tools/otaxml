@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# Exports
+
+. $ANDROID_BUILD_TOP/vendor/xd/tools/colors
+
+export otaxml=ota${BENOZ_OTA_XMLVER}.xml
+
+if [ -f $otaxml ];
+then
+  rm -f $otaxml
+fi
+
+cp vendor/benzo/ota.xml $otaxml
+
+touch $otaxml
+
+BENOZ_OTA_MD5=$(cat "$OUT/$BENO_PACKAGE_NAME.zip.md5sum" | cut -d ' ' -f 1)
+BENOZ_OTA_FILESIZE=$(ls -la "$OUT/$BENO_PACKAGE_NAME.zip" | cut -d ' ' -f 5)
+
+sed -i "s/BENZO_OTA_ROM/${BENOZ_OTA_ROM}/g" $otaxml
+sed -i "s/BENZO_OTA_VERNAME/${BENOZ_OTA_VERNAME}/g" $otaxml
+sed -i "s/BENZO_OTA_VERSION/${BENOZ_OTA_VER}/g" $otaxml
+sed -i "s|BENZO_OTA_URL|${BENOZ_OTA_URL}|g" $otaxml
+sed -i "s/BENZO_OTA_MD5/${BENOZ_OTA_MD5}/g" $otaxml
+sed -i "s/BENZO_OTA_FILESIZE/${BENOZ_OTA_FILESIZE}/g" $otaxml
+sed -i "s|BENZO_DONATE|${BENOZ_DONATE}|g" $otaxml
+
+cp $otaxml $OUT/
+rm $otaxml
+
+echo ${bldppl}"ota.xml generated."${txtrst}

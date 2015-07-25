@@ -1,6 +1,6 @@
 #!/sbin/sh
 #
-# /system/addon.d/50-eos.sh
+# /system/addon.d/50-benzo.sh
 # During a upgrade, this script backs up /system/etc/hosts,
 # /system is formatted and reinstalled, then the file is restored.
 #

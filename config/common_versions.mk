@@ -2,23 +2,29 @@
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=LYZ28E BUILD_ID=LYZ28E BUILD_VERSION_TAGS=release-keys BUILD_UTC_DATE=0
 
-# Versioning System
-PRODUCT_VERSION_MAJOR = 1
-PRODUCT_VERSION_MINOR = 1
-#PRODUCT_VERSION_MAINTENANCE = 0.1
-
-ifndef EOS_BUILD_TYPE
-    EOS_BUILD_TYPE := UNOFFICIAL
-    PLATFORM_VERSION_CODENAME := UNOFFICIAL
-    EOS_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
-endif
+PLATFORM_VERSION_CODENAME := UNOFFICIAL
+BENZO_POSTFIX := -$(shell date -u +%Y%m%d)
 
 
-# Set all versions
-ROM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(CUSTOM_BUILD)-$(EOS_BUILD_TYPE)-$(shell date -u +%Y%m%d)
+ROM_DATE := $(shell date -u +%Y%m%d)-$(shell date -u +%H%M)
+ROM_VERSION := $(ROM_DATE)-$(TARGET_DEVICE)
+OTA_DATE := $(shell date -u +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   BUILD_DISPLAY_ID=$(BUILD_ID) \
-  ro.eos.version=$(ROM_VERSION) \
-  eos.ota.version=$(shell date -u +%Y%m%d) \
+  ro.benzo.version=$(ROM_VERSION) \
   ro.modversion=$(ROM_VERSION)
+
+BENZO_ROM_NAME := Benzo
+BENZO_DEVICE_URL := http://files.oceighty.co/benzo
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ota.romname=$(TARGET_DEVICE) \
+    ro.ota.version=$(OTA_DATE) \
+    ro.ota.device=$(TARGET_DEVICE) \
+    ro.ota.manifest=http://oceighty.co/ota/ota.xml
+
+export BENZO_OTA_ROM=$(BENZO_ROM_NAME)
+export BENZO_OTA_VERNAME=benzo-fivedotone-$(ROM_VERSION)
+export BENZO_OTA_VER=$(OTA_DATE)
+export BENZO_OTA_URL=$(BENZO_DEVICE_URL)/$(BENZO_OTA_VERNAME).zip
