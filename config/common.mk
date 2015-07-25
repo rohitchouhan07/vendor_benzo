@@ -71,6 +71,10 @@ PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/priv-app/LMT/LMT.apk:system/priv-app/LMT/LMT.apk \
     vendor/benzo/prebuilt/common/priv-app/LMT/lib/arm/libTouchServiceNative.so:system/priv-app/LMT/lib/arm/libTouchServiceNative.so
 
+# Benzo Performance
+PRODUCT_COPY_FILES += \
+    vendor/benzo/prebuilt/common/priv-app/BPerf/BPerf.apk:system/priv-app/BPerf/BPerf.apk
+
 # Add few DRM libs
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
