@@ -62,6 +62,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
+# Adblocker
+PRODUCT_COPY_FILES += \
+    vendor/benzo/prebuilt/common/app/BenzoBlock/BenzoBlock.apk:system/app/BenzoBlock/BenzoBlock.apk
+
 # Add few DRM libs
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
