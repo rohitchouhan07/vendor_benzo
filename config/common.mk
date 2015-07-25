@@ -1,3 +1,6 @@
+# Inherit build optimizations
+include vendor/benzo/config/optimizations.mk
+
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google
@@ -141,6 +144,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 include vendor/benzo/config/themes_common.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay/common
+
+# SM Makefile
+include vendor/benzo/config/sm.mk
 
 # Inherit common product build prop overrides
 -include vendor/benzo/config/common_versions.mk
