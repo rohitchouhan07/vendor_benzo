@@ -11,7 +11,6 @@ ROM_VERSION := $(ROM_DATE)-$(TARGET_DEVICE)
 OTA_DATE := $(shell date -u +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  BUILD_DISPLAY_ID=$(BUILD_ID) \
   ro.benzo.version=$(ROM_VERSION) \
   ro.modversion=$(ROM_VERSION)
 
