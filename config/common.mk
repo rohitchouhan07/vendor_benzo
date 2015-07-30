@@ -56,6 +56,10 @@ PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/priv-app/ViPER4Android_FX_A4.x/lib/arm/libV4AJniUtils.so:system/priv-app/ViPER4Android_FX_A4/lib/arm/libV4AJniUtils.so \
     vendor/benzo/prebuilt/common/etc/v4a.zip:system/addon.d/v4a.zip
 
+# Log fix for GCC 5.2
+PRODUCT_COPY_FILES += \
+    vendor/benzo/prebuilt/common/etc/logfix.zip:system/addon.d/logfix.zip
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
