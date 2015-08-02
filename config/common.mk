@@ -108,7 +108,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     OmniSwitch \
     Profiles \
-    SlimLauncher
+    SlimLauncher \
+    WallpaperPicker
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
