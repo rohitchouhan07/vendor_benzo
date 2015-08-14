@@ -94,12 +94,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/priv-app/BPerf/BPerf.apk:system/priv-app/BPerf/BPerf.apk
 
-# Add few DRM libs
-PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    vendor/benzo/prebuilt/common/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
-    vendor/benzo/prebuilt/common/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
-
 # Extra packages
 PRODUCT_PACKAGES += \
     BenzoOTA \
