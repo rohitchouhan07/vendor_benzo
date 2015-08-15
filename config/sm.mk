@@ -127,14 +127,16 @@ ifeq (true,$(FLOOP_NEST_OPTIMIZE))
 endif
 
 ifeq (true,$(FFAST_MATH))
-   OPT10 := (extras)
+   OPT10 := (fast-math)
  else
    OPT10:=
 endif
 
   GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)$(OPT6)$(OPT7)$(OPT8)
+  GCC_OPTIMIZATION_DUMPVAR := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)$(OPT6)$(OPT7)$(OPT8)$(OPT9)$(OPT10)
   ifneq ($(GCC_OPTIMIZATION_LEVELS),)
     PRODUCT_PROPERTY_OVERRIDES += \
       ro.sm.flags=$(GCC_OPTIMIZATION_LEVELS)
   endif
 export GCC_OPTIMIZATION_LEVELS
+export GCC_OPTIMIZATION_DUMPVAR
