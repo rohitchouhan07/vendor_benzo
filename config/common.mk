@@ -98,6 +98,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     BenzoOTA \
     Development \
+    Eleven \
     LockClock \
     OmniSwitch \
     Profiles \
