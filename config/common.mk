@@ -102,7 +102,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     OmniSwitch \
     Profiles \
-    SlimLauncher
+    SlimLauncher \
+    VisualizationWallpapers
 
 # Busybox
 PRODUCT_PACKAGES += \
