@@ -5,5 +5,6 @@ $(call inherit-product, vendor/benzo/config/common.mk)
 PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
-    PhaseBeam
+    PhaseBeam \
+    CMSettingsProvider
 
