@@ -44,6 +44,9 @@
         <item>org.cyanogenmod.platform.internal.ProfileManagerService</item>
         <item>org.cyanogenmod.platform.internal.CMHardwareService</item>
         <item>org.cyanogenmod.platform.internal.PartnerInterfaceService</item>
+        <item>org.cyanogenmod.platform.internal.AppSuggestManagerService</item>
     </string-array>
+
+    <string name="config_customResolverActivity">org.cyanogenmod.resolver/org.cyanogenmod.resolver.ResolverActivity</string>
 
 </resources>
