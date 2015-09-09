@@ -16,6 +16,9 @@ on boot
     restorecon /sys/block/mmcblk0/queue/scheduler
     setenforce 0
 
+    # Persistent properties (only created if persist exists)
+    mkdir /persist/properties 0770 system system
+
 # adb over network
 on property:service.adb.tcp.port=5555
     stop adbd
