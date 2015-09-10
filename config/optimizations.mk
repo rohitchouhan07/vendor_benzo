@@ -1,3 +1,4 @@
+export USE_HOST_LEX := yes
 export USE_ORACLE_JAVA := 1
 export USE_CCACHE := 1
 export USE_SYSTEM_CCACHE := 1
@@ -18,7 +19,7 @@ export FLOOP_NEST_OPTIMIZE := true
 export TARGET_NDK_GCC_VERSION := 5.2
 export TARGET_GCC_VERSION_EXP := 5.2
 export TARGET_GCC_VERSION := 5.2
-export TARGET_GCC_VERSION_KERNEL := 5.2
+export TARGET_GCC_VERSION_KERNEL := 6.0
 export KBUILD_BUILD_USER := xanaxdroid
 export KBUILD_BUILD_HOST := benzo
 export TARGET_DEVICE := shamu
