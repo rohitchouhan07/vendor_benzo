@@ -111,6 +111,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Busybox
 
+# Nano and libncurses
+PRODUCT_PACKAGES += \
+    nano \
+    libncurses
+
 PRODUCT_PACKAGES += \
     procmem \
     procrank \
