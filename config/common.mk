@@ -92,6 +92,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/priv-app/BPerf/BPerf.apk:system/priv-app/BPerf/BPerf.apk
 
+# Gallery Next
+PRODUCT_COPY_FILES += \
+    vendor/benzo/prebuilt/common/app/GalleryNext/GalleryNext.apk:system/app/GalleryNext/GalleryNext.apk
+
 # Extra packages
 PRODUCT_PACKAGES += \
     BenzoOTA \
