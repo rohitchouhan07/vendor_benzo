@@ -107,13 +107,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Busybox
 
-# Extra externals
-PRODUCT_PACKAGES += \
-    libncurses \
-    unrar \
-    vim \
-    zip
-
 PRODUCT_PACKAGES += \
     procmem \
     procrank \
