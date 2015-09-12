@@ -3,6 +3,7 @@ export USE_ORACLE_JAVA := 1
 export USE_CCACHE := 1
 export USE_SYSTEM_CCACHE := 1
 export BUILD_BLOCKIMAGE := 0
+export USE_SQUISHER :=false
 export ART_USE_OPTIMIZING_COMPILER := true
 export ENABLE_ARM_MODE := true
 export USE_O3_OPTIMIZATIONS := true
