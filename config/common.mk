@@ -88,9 +88,9 @@ PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/priv-app/LMT/LMT.apk:system/priv-app/LMT/LMT.apk \
     vendor/benzo/prebuilt/common/priv-app/LMT/lib/arm/libTouchServiceNative.so:system/priv-app/LMT/lib/arm/libTouchServiceNative.so
 
-# Benzo Performance
+# Kernel Adiutor
 PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/priv-app/BPerf/BPerf.apk:system/priv-app/BPerf/BPerf.apk
+    vendor/benzo/prebuilt/common/priv-app/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
 
 # Gallery Next
 PRODUCT_COPY_FILES += \
