@@ -79,19 +79,20 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-	BenzoBlock \
+    BenzoBlock \
     BenzoOTA \
+    CMSettingsProvider \
     Development \
     Eleven \
-	GalleryNext \
-	KernelAdiutor \
-	LMT \
+    GalleryNext \
+    KernelAdiutor \
+    LMT \
     LockClock \
     OmniSwitch \
     Profiles \
     SlimLauncher \
     Terminal \
-	Viper4Android \
+    Viper4Android \
     VisualizationWallpapers
 
 # Busybox
