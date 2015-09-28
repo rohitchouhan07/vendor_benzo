@@ -6,6 +6,7 @@ export BUILD_BLOCKIMAGE := 0
 export USE_SQUISHER :=false
 export ART_USE_OPTIMIZING_COMPILER := true
 export ENABLE_ARM_MODE := true
+export FORCE_DISABLE_DEBUGGING := true
 export USE_O3_OPTIMIZATIONS := true
 export TARGET_USE_PIPE := true
 export STRICT_ALIASING := true
