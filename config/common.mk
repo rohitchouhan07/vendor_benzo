@@ -47,11 +47,9 @@ PRODUCT_COPY_FILES += \
    vendor/benzo/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/benzo/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
-# Viper4Android
+# Viper4Android etxra files
 PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh \
-    vendor/benzo/prebuilt/common/priv-app/ViPER4Android_FX_A4.x/ViPER4Android_FX_A4.x.apk:system/priv-app/ViPER4Android_FX_A4/ViPER4Android_FX_A4.x.apk \
-    vendor/benzo/prebuilt/common/priv-app/ViPER4Android_FX_A4.x/lib/arm/libV4AJniUtils.so:system/priv-app/ViPER4Android_FX_A4/lib/arm/libV4AJniUtils.so \
     vendor/benzo/prebuilt/common/etc/v4a.zip:system/addon.d/v4a.zip
 
 # Log fix for GCC 5.2
@@ -79,32 +77,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-# Adblocker
-PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/app/BenzoBlock/BenzoBlock.apk:system/app/BenzoBlock/BenzoBlock.apk
-
-# LMT (PIE)
-PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/priv-app/LMT/LMT.apk:system/priv-app/LMT/LMT.apk \
-    vendor/benzo/prebuilt/common/priv-app/LMT/lib/arm/libTouchServiceNative.so:system/priv-app/LMT/lib/arm/libTouchServiceNative.so
-
-# Kernel Adiutor
-PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/priv-app/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
-
-# Gallery Next
-PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/common/app/GalleryNext/GalleryNext.apk:system/app/GalleryNext/GalleryNext.apk
-
 # Extra packages
 PRODUCT_PACKAGES += \
+	BenzoBlock \
     BenzoOTA \
     Development \
     Eleven \
+	GalleryNext \
+	KernelAdiutor \
+	LMT \
     LockClock \
     OmniSwitch \
     Profiles \
     SlimLauncher \
+    Terminal \
+	Viper4Android \
     VisualizationWallpapers
 
 # Busybox
