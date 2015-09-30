@@ -20,6 +20,9 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
 LOCAL_MODULE_TAGS := optional
+$(shell mkdir -p $(TARGET_OUT_APPS_PRIVILEGED)/LMT/lib/arm)
+$(shell cp $(LOCAL_PATH)/LMT/lib/arm/libTouchServiceNative.so $(TARGET_OUT_APPS_PRIVILEGED)/LMT/lib/arm/libTouchServiceNative.so)
+ALL_DEFAULT_INSTALLED_MODULES += $(TARGET_OUT_APPS_PRIVILEGED)/LMT/lib/arm/libTouchServiceNative.so
 include $(BUILD_PREBUILT)
 
 # Install Viper4Android
