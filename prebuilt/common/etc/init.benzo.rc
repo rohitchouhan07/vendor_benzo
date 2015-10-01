@@ -77,6 +77,12 @@ on property:service.adb.tcp.port=-1
     stop adbd
     start adbd
 
+# For now default this to opendns until we modify the code to read a system propery
+# dnscrypt proxy
+service dnscrypt-proxy /system/xbin/dnscrypt-proxy
+    class main
+    disabled
+
 # sysinit (/system/etc/init.d)
 service sysinit /system/bin/sysinit
     user root
