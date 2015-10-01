@@ -5,6 +5,7 @@ export USE_SYSTEM_CCACHE := 1
 export BUILD_BLOCKIMAGE := 0
 export USE_SQUISHER :=false
 export ART_USE_OPTIMIZING_COMPILER := true
+ifneq ($(DISABLE_OPTIMIZATIONS),true)
 export ENABLE_ARM_MODE := true
 export FORCE_DISABLE_DEBUGGING := true
 export USE_O3_OPTIMIZATIONS := true
@@ -18,6 +19,7 @@ export ENABLE_GCCONLY := true
 export GRAPHITE_OPTS := true
 export FFAST_MATH := false
 export FLOOP_NEST_OPTIMIZE := true
+endif
 export TARGET_NDK_GCC_VERSION := 5.2
 export TARGET_GCC_VERSION_EXP := 5.2
 export TARGET_GCC_VERSION := 5.2
