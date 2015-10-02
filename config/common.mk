@@ -95,6 +95,12 @@ PRODUCT_PACKAGES += \
     Viper4Android \
     VisualizationWallpapers
 
+# DNSCrypt
+PRODUCT_PACKAGES += \
+    dnscrypt-proxy \
+    dnscrypt-resolvers.csv \
+    libsodium
+
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
