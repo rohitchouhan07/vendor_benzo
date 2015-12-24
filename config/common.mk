@@ -87,6 +87,7 @@ PRODUCT_PACKAGES += \
     LayersManager \
     LMT \
     LockClock \
+    OmniJaws \
     Terminal \
     Viper4Android
 
