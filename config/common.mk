@@ -98,6 +98,9 @@ PRODUCT_PACKAGES += \
     Terminal \
     Viper4Android
 
+# T-Mobile theme engine
+include vendor/benzo/config/themes_common.mk
+
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
