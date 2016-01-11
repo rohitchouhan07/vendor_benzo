@@ -68,6 +68,10 @@ PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
     vendor/benzo/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
+# Layers backup
+PRODUCT_COPY_FILES += \
+    vendor/benzo/prebuilt/common/addon.d/71-layers.sh:system/addon.d/71-layers.sh
+
 # SuperSU
 PRODUCT_COPY_FILES += \
    vendor/benzo/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
