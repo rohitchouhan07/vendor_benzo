@@ -82,12 +82,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     BenzoBlock \
     BenzoOTA \
+    Gallery2 \
     KernelAdiutor \
     Launcher3 \
     LayersManager \
     LMT \
     LockClock \
     OmniJaws \
+    OmniSwitch \
     Terminal \
     Viper4Android
 
