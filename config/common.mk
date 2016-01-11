@@ -86,6 +86,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     BenzoBlock \
     BenzoOTA \
+    Chromium \
     Gallery2 \
     KernelAdiutor \
     Launcher3 \
