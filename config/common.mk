@@ -25,7 +25,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.allow.mock.location=0 \
     ro.debuggable=1 \
     persist.service.adb.enable=1 \
-    ro.layers.noIcon=noIcon
+    ro.layers.noIcon=noIcon \
+    persist.sys.root_access=3
 
 # Enable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += \
