@@ -95,6 +95,7 @@ PRODUCT_PACKAGES += \
     LMT \
     LockClock \
     OmniJaws \
+    OmniStyle \
     OmniSwitch \
     Terminal \
     Viper4Android
