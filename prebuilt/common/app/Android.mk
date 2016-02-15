@@ -15,7 +15,7 @@ LOCAL_PREBUILT_JNI_LIBS_arm := \
 	@lib/armeabi/libtcpdump_exec.so
 include $(BUILD_PREBUILT)
 
-# Chromium Browser 49.0.2571.0
+# Chromium Browser 50.0.2652.0
 include $(CLEAR_VARS)
 LOCAL_MODULE := Chromium
 LOCAL_SRC_FILES := Chromium/Chromium.apk
