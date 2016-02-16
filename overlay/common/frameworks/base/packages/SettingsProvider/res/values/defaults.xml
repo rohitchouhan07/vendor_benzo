@@ -18,7 +18,7 @@
 -->
 <resources>  
     <!-- Google backup -->
-    <string name="def_backup_transport">com.google.android.backup/.BackupTransportService</string>
+    <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
 
     <!-- Market apps -->
     <bool name="def_install_non_market_apps">true</bool>
